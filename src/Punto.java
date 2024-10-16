@@ -38,5 +38,18 @@ public class Punto {
         double xMedio=(this.x+p.getX())/2;
         double yMedio=(this.y+p.getY())/2;
         return new Punto(xMedio,yMedio);
-        }
     }
+    public String toString(){
+        return "("+x+", "+y+")";
+    }
+    public boolean equals (Punto p){
+     boolean uguali;
+     if(p.getX()==this.x&&p.getY()==this.y){
+         uguali=true;
+     }
+     else{
+         uguali=false;
+     }
+     return uguali;
+    }
+}
